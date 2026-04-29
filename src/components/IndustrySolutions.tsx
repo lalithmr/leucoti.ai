@@ -1,0 +1,154 @@
+import { motion } from 'motion/react';
+import { 
+  BookOpen, 
+  Hotel, 
+  ShoppingBag, 
+  Building2, 
+  Stethoscope, 
+  Scale,
+  CheckCircle2
+} from 'lucide-react';
+
+const solutions = [
+  {
+    title: 'Education & e-Learning',
+    description: 'Our AI automation agency facilitates scalable, data-driven educations in both traditional and digital classrooms.',
+    icon: BookOpen,
+    features: [
+      'Automated grading and feedback tool',
+      'Personalized lesson plans',
+      'AI teaching assistants & chatbots',
+      'Student engagement tracking'
+    ],
+    color: 'from-blue-500/20 to-cyan-500/20'
+  },
+  {
+    title: 'Hotels & Restaurants',
+    description: 'Our AI automation agency partners with hoteliers to simplify room reservations, inventory tracking and admin work.',
+    icon: Hotel,
+    features: [
+      'Al-driven booking & reservation systems',
+      'Smart room allocation',
+      'Automated service feedback collection',
+      'Supply chain management'
+    ],
+    color: 'from-orange-500/20 to-red-500/20'
+  },
+  {
+    title: 'Retail & eCommerce',
+    description: 'Automate store operations, retail pricing, and order fulfillment with our custom AI automation solutions.',
+    icon: ShoppingBag,
+    features: [
+      'AI product recommendations',
+      'Automated order processing',
+      'Chatbots for customer queries',
+      'Demand forecasting & stock optimization'
+    ],
+    color: 'from-pink-500/20 to-rose-500/20'
+  },
+  {
+    title: 'Fintech & Banking',
+    description: 'Create faster, smarter, and more secure financial operations with our AI automation services.',
+    icon: Building2,
+    features: [
+      'Automated loan/credit approval workflows',
+      'Fraud detection & anomaly alerts',
+      'Customer onboarding & KYC automation',
+      'Chatbots for 24/7 customer support'
+    ],
+    color: 'from-emerald-500/20 to-teal-500/20'
+  },
+  {
+    title: 'Medical & Healthcare',
+    description: 'Our AI automation agency helps healthcare providers to enhance patient outcomes and reduce administrative workload.',
+    icon: Stethoscope,
+    features: [
+      'Automated clinical documentation',
+      'Al-driven appointment scheduling',
+      'Medical symptoms checking bots',
+      'Patient support chatbots'
+    ],
+    color: 'from-purple-500/20 to-indigo-500/20'
+  },
+  {
+    title: 'Legal Research',
+    description: 'Streamline legal processes and improve access to justice with our AI-powered automation solutions.',
+    icon: Scale,
+    features: [
+      'Automated case analysis',
+      'Legal document summarization',
+      'E-discovery and document sorting',
+      'Chatbots for legal help/form generation'
+    ],
+    color: 'from-slate-500/20 to-slate-800/20'
+  }
+];
+
+export default function IndustrySolutions() {
+  return (
+    <section id="solutions" className="section-padding relative overflow-hidden bg-white border-b border-brand-primary/10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="mb-20"
+        >
+          <div className="flex items-center gap-4 mb-6">
+             <div className="h-px w-10 bg-brand-primary" />
+             <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.6em]">Get Industry-Centric solutions</p>
+          </div>
+          <h2 className="text-5xl lg:text-7xl font-black text-brand-primary tracking-tighter leading-none">
+            Our Automation agency <br /><span className="text-brand-accent italic font-serif">.</span>
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-brand-primary/10 border border-brand-primary/10">
+          {solutions.map((solution, index) => (
+            <motion.div
+              key={solution.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ 
+                duration: 0.8, 
+                delay: index * 0.1, 
+                ease: [0.16, 1, 0.3, 1] 
+              }}
+              className="bg-white p-8 md:p-12 hover:bg-brand-muted transition-colors duration-500 group flex flex-col h-full"
+            >
+              <div className="flex justify-between items-center mb-12">
+                 <div className="p-4 bg-brand-primary/5 rounded-lg group-hover:bg-brand-accent group-hover:text-white transition-colors duration-500">
+                    <solution.icon className="w-8 h-8" />
+                 </div>
+                 <span className="text-[10px] font-mono font-bold text-slate-300">0{index + 1}</span>
+              </div>
+              
+              <h3 className="text-2xl lg:text-3xl font-black text-brand-primary mb-6 tracking-tighter uppercase group-hover:text-brand-accent transition-colors leading-[0.9]">
+                {solution.title}
+              </h3>
+              
+              <p className="text-slate-500 text-base lg:text-lg leading-relaxed mb-10 font-medium tracking-tight">
+                {solution.description}
+              </p>
+
+              <div className="mt-auto pt-10 border-t border-brand-primary/5">
+                <ul className="space-y-4">
+                  {solution.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-4">
+                      <div className="w-1.5 h-1.5 bg-brand-accent rounded-full mt-1.5 shrink-0" />
+                      <span className="text-xs font-bold text-slate-400 uppercase tracking-widest leading-snug">
+                        {feature}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

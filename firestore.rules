@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function isValidLead(data) {
+      return data.name is string && data.name.size() >= 2 && data.name.size() <= 100 &&
+             data.email is string && data.email.matches('^[^@]+@[^@]+\\.[^@]+$') &&
+             data.message is string && data.message.size() >= 10 && data.message.size() <= 2000 &&
+             data.createdAt == request.time &&
+             (data.keys().hasAll(['name', 'email', 'message', 'createdAt']) && 
+              (data.keys().size() == 4 || (data.keys().size() == 5 && data.company is string && data.company.size() <= 100)));
+    }
+
+    match /leads/{leadId} {
+      allow create: if isValidId(leadId) && isValidLead(incoming());
+      // Leads should only be readable by admins or specific backend processes (not implemented here, so denied)
+      allow read, update, delete: if false;
+    }
+  }
+}
