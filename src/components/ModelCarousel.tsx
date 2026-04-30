@@ -116,7 +116,7 @@ export default function ModelCarousel() {
   const duplicatedModels = [...models, ...models, ...models];
 
   return (
-    <div className="section-padding border-y border-brand-primary/5 overflow-hidden relative bg-white">
+    <div className="section-padding border-y border-brand-primary/5 overflow-hidden relative bg-brand-primary/[0.02]">
       {/* Edge Fades */}
       <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/40 to-transparent z-20 pointer-events-none" />
       <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white via-white/40 to-transparent z-20 pointer-events-none" />

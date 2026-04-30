@@ -19,16 +19,20 @@ import Services from './components/Services';
 import LeadForm from './components/LeadForm';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import RobotAssistant from './components/RobotAssistant';
+import AnimatedBackground from './components/AnimatedBackground';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-brand-light selection:bg-brand-accent/20 md:cursor-none">
+    <div className="min-h-screen text-brand-primary selection:bg-brand-accent/30 md:cursor-none relative">
+      <AnimatedBackground />
       <CustomCursor />
+      <RobotAssistant />
       <Navbar />
       <main>
         <Hero />
         <ModelCarousel />
-        <FeaturesGrid />
+        <Services />
         <ProcessSection />
         <IndustrySolutions />
         <Testimonials />

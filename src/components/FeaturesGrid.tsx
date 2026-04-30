@@ -26,9 +26,9 @@ const features = [
 
 export default function FeaturesGrid() {
   return (
-    <section id="features" className="section-padding bg-white border-y border-brand-primary/10">
+    <section id="features" className="section-padding border-y border-brand-primary/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -54,16 +54,16 @@ export default function FeaturesGrid() {
               key={feature.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.02,
                 boxShadow: "0 20px 40px -10px rgba(37, 99, 235, 0.15)",
                 borderColor: "rgba(37, 99, 235, 0.4)"
               }}
               viewport={{ once: true, margin: "-10% 0px" }}
-              transition={{ 
-                duration: 0.8, 
-                delay: index * 0.1, 
-                ease: [0.16, 1, 0.3, 1] 
+              transition={{
+                duration: 0.8,
+                delay: index * 0.1,
+                ease: [0.16, 1, 0.3, 1]
               }}
               className="p-8 md:p-12 border-r border-b border-brand-primary/10 group hover:bg-brand-primary transition-all duration-500 cursor-pointer h-full flex flex-col relative z-0 hover:z-10 bg-white"
             >
@@ -72,7 +72,7 @@ export default function FeaturesGrid() {
               </div>
               <div className="mb-10">
                 <motion.div
-                  whileHover={{ 
+                  whileHover={{
                     scale: [1.15, 1.05, 1.15],
                     filter: [
                       "drop-shadow(0 0 0px rgba(255,255,255,0))",
@@ -80,7 +80,7 @@ export default function FeaturesGrid() {
                       "drop-shadow(0 0 0px rgba(255,255,255,0))"
                     ]
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 2,
                     repeat: Infinity,
                     ease: "easeInOut"

@@ -65,7 +65,7 @@ export default function ProcessSection() {
     <section 
       id="process"
       ref={containerRef}
-      className="section-padding relative overflow-hidden bg-white"
+      className="section-padding relative overflow-hidden bg-brand-primary/[0.02]"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
         <motion.div 

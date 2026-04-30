@@ -30,7 +30,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="section-padding bg-white border-b border-brand-primary/10">
+    <section className="section-padding border-b border-brand-primary/10 bg-brand-primary/[0.02]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row gap-20 items-start mb-20 lg:mb-32">
           <motion.div

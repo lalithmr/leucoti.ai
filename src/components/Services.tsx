@@ -30,7 +30,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="section-padding bg-[#F8F9FA] border-b border-brand-primary/10">
+    <section id="services" className="section-padding border-b border-brand-primary/10">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-16 lg:mb-24">
           <div className="lg:w-1/2">

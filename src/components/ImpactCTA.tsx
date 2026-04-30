@@ -18,7 +18,7 @@ const impacts = [
 
 export default function ImpactCTA() {
   return (
-    <section className="relative overflow-hidden pt-32 lg:pt-48 bg-white">
+    <section className="relative overflow-hidden pt-32 lg:pt-48 bg-brand-primary/[0.02]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-32 lg:mb-48">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 items-center">
           

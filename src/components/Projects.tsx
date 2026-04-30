@@ -18,7 +18,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-padding bg-white border-b border-brand-primary/10">
+    <section id="projects" className="section-padding border-b border-brand-primary/10 bg-brand-primary/[0.02]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
