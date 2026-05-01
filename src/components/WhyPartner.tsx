@@ -15,7 +15,7 @@ const reasons = [
 export default function WhyPartner() {
   return (
     <section className="section-padding bg-brand-muted border-b border-brand-primary/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="w-full px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           <motion.div
@@ -56,7 +56,7 @@ export default function WhyPartner() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-brand-primary/10 border border-brand-primary/10">
               {reasons.map((reason, i) => (
-                <div key={reason} className="bg-white p-4 md:p-6 flex items-center gap-4 group hover:bg-brand-muted transition-colors">
+                <div key={reason} className="card-pop p-4 md:p-6 flex items-center gap-4 group">
                   <div className="w-1.5 h-1.5 bg-brand-accent rounded-full shrink-0" />
                   <span className="text-[10px] font-black text-brand-primary uppercase tracking-widest leading-none translate-y-[1px]">{reason}</span>
                 </div>

@@ -19,7 +19,7 @@ const impacts = [
 export default function ImpactCTA() {
   return (
     <section className="relative overflow-hidden pt-32 lg:pt-48 bg-brand-primary/[0.02]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-32 lg:mb-48">
+      <div className="w-full px-6 lg:px-12 mb-32 lg:mb-48">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 items-center">
           
           <motion.div
@@ -72,7 +72,7 @@ export default function ImpactCTA() {
       </div>
 
       <div className="bg-brand-accent py-32 lg:py-48 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10 text-white">
+        <div className="w-full px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-12 relative z-10 text-white">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-none uppercase max-w-3xl">
             Scale your infrastructure with <span className="italic opacity-80 underline decoration-white/30 underline-offset-8 font-serif">autonomous protocols.</span>
           </h2>

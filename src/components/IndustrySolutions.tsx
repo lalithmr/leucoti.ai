@@ -93,7 +93,7 @@ const solutions = [
 export default function IndustrySolutions() {
   return (
     <section id="solutions" className="section-padding relative overflow-hidden border-b border-brand-primary/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
+      <div className="w-full px-6 lg:px-12 relative">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -122,7 +122,7 @@ export default function IndustrySolutions() {
                 delay: index * 0.1,
                 ease: [0.16, 1, 0.3, 1]
               }}
-              className="bg-white p-8 md:p-12 hover:bg-brand-muted transition-colors duration-500 group flex flex-col h-full relative overflow-hidden"
+              className="card-pop p-8 md:p-12 group flex flex-col h-full"
             >
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-[0.08] group-hover:opacity-[0.2] transition-opacity duration-700 pointer-events-none mix-blend-luminosity group-hover:mix-blend-normal"

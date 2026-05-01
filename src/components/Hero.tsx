@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section id="hero" className="relative min-h-[95vh] flex items-center pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full relative z-10">
+      <div className="w-full px-6 lg:px-12 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-0 min-h-[70vh]">
           <div className="lg:col-span-9 flex flex-col justify-center">
             <motion.div

@@ -26,7 +26,7 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="section-padding bg-brand-light">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="w-full px-6 lg:px-12">
         <div className="max-w-4xl mx-auto">
           <div className="mb-20">
             <div className="flex items-center gap-4 mb-6">

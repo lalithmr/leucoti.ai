@@ -24,7 +24,7 @@ import AnimatedBackground from './components/AnimatedBackground';
 
 export default function App() {
   return (
-    <div className="min-h-screen text-brand-primary selection:bg-brand-accent/30 md:cursor-none relative">
+    <div className="min-h-screen text-brand-primary selection:bg-brand-accent/30 md:cursor-none relative overflow-x-hidden w-full">
       <AnimatedBackground />
       <CustomCursor />
       <RobotAssistant />
@@ -38,7 +38,6 @@ export default function App() {
         <Testimonials />
         <WhyPartner />
         <ImpactCTA />
-        <StatsSection />
         <Projects />
         <FAQ />
         <LeadForm />

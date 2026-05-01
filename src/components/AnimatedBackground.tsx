@@ -68,7 +68,7 @@ function NeuralNetwork() {
         // Interactive mouse connection and repulsion
         if (distMouse < mouse.radius) {
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(37, 99, 235, ${0.4 * (1 - distMouse / mouse.radius)})`;
+          ctx.strokeStyle = `rgba(67, 56, 202, ${0.4 * (1 - distMouse / mouse.radius)})`;
           ctx.lineWidth = 1;
           ctx.moveTo(p.x, p.y);
           ctx.lineTo(mouse.x, mouse.y);
@@ -95,9 +95,9 @@ function NeuralNetwork() {
             ctx.beginPath();
             // Default lines are subtle brand-primary, near mouse they light up blue
             if (distMouse < mouse.radius) {
-              ctx.strokeStyle = `rgba(37, 99, 235, ${0.2 * (1 - dist2 / 120)})`;
+              ctx.strokeStyle = `rgba(67, 56, 202, ${0.2 * (1 - dist2 / 120)})`;
             } else {
-              ctx.strokeStyle = `rgba(26, 26, 26, ${0.08 * (1 - dist2 / 120)})`;
+              ctx.strokeStyle = `rgba(0, 0, 0, ${0.08 * (1 - dist2 / 120)})`;
             }
             ctx.lineWidth = 0.5;
             ctx.moveTo(p.x, p.y);
@@ -117,11 +117,11 @@ function NeuralNetwork() {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         if (distMouse < mouse.radius) {
-          ctx.fillStyle = `rgba(37, 99, 235, ${Math.max(0.2, 1 - distMouse / mouse.radius)})`;
+          ctx.fillStyle = `rgba(67, 56, 202, ${Math.max(0.2, 1 - distMouse / mouse.radius)})`;
           ctx.shadowBlur = 10;
-          ctx.shadowColor = 'rgba(37, 99, 235, 0.8)';
+          ctx.shadowColor = 'rgba(67, 56, 202, 0.8)';
         } else {
-          ctx.fillStyle = 'rgba(26, 26, 26, 0.15)';
+          ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
           ctx.shadowBlur = 0;
         }
         ctx.fill();

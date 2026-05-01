@@ -27,7 +27,7 @@ const features = [
 export default function FeaturesGrid() {
   return (
     <section id="features" className="section-padding border-y border-brand-primary/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="w-full px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,9 +65,9 @@ export default function FeaturesGrid() {
                 delay: index * 0.1,
                 ease: [0.16, 1, 0.3, 1]
               }}
-              className="p-8 md:p-12 border-r border-b border-brand-primary/10 group hover:bg-brand-primary transition-all duration-500 cursor-pointer h-full flex flex-col relative z-0 hover:z-10 bg-white"
+              className="card-pop p-8 md:p-12 group cursor-pointer h-full flex flex-col"
             >
-              <div className="text-[10px] font-mono font-bold text-brand-primary group-hover:text-white/40 mb-12 transition-colors">
+              <div className="text-[10px] font-mono font-bold text-brand-primary group-hover:text-brand-accent mb-12 transition-colors">
                 0{index + 1}
               </div>
               <div className="mb-10">
@@ -86,13 +86,13 @@ export default function FeaturesGrid() {
                     ease: "easeInOut"
                   }}
                 >
-                  <feature.icon className="w-10 h-10 text-brand-accent group-hover:text-white transition-colors" />
+                  <feature.icon className="w-10 h-10 text-brand-accent group-hover:text-brand-tertiary transition-colors" />
                 </motion.div>
               </div>
-              <h3 className="text-2xl font-black text-brand-primary group-hover:text-white mb-6 tracking-tighter transition-colors uppercase leading-tight">
+              <h3 className="text-2xl font-black text-brand-primary group-hover:text-brand-accent mb-6 tracking-tighter transition-colors uppercase leading-tight">
                 {feature.title}
               </h3>
-              <p className="text-slate-500 text-base leading-relaxed group-hover:text-white/70 transition-colors font-medium">
+              <p className="text-slate-500 text-base leading-relaxed group-hover:text-slate-800 transition-colors font-medium">
                 {feature.description}
               </p>
             </motion.div>

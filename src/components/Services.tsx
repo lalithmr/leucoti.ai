@@ -31,7 +31,7 @@ const services = [
 export default function Services() {
   return (
     <section id="services" className="section-padding border-b border-brand-primary/10">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+      <div className="w-full px-6 lg:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-16 lg:mb-24">
           <div className="lg:w-1/2">
             <h2 className="text-5xl lg:text-7xl font-black mb-8 tracking-tighter text-brand-primary leading-none">
@@ -57,7 +57,7 @@ export default function Services() {
                 delay: index * 0.1, 
                 ease: [0.16, 1, 0.3, 1] 
               }}
-              className="bg-white p-8 md:p-12 hover:bg-brand-muted transition-colors duration-500 group flex flex-col justify-between min-h-[300px] md:min-h-[320px]"
+              className="card-pop p-8 md:p-12 group flex flex-col justify-between min-h-[300px] md:min-h-[320px]"
             >
               <div>
                 <div className="flex justify-between items-start mb-12">

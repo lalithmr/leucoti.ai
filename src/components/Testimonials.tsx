@@ -31,7 +31,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="section-padding border-b border-brand-primary/10 bg-brand-primary/[0.02]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="w-full px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row gap-20 items-start mb-20 lg:mb-32">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -59,7 +59,7 @@ export default function Testimonials() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white p-8 md:p-12 hover:bg-brand-muted transition-colors duration-500"
+                className="card-pop p-8 md:p-12"
               >
                 <div className="flex gap-1 mb-8">
                   {[...Array(5)].map((_, i) => (

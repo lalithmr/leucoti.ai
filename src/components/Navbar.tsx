@@ -27,7 +27,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 sm:px-6 ${isScrolled ? 'py-3' : 'py-6'
         }`}
     >
-      <div className={`max-w-7xl mx-auto transition-all duration-500 rounded-none overflow-hidden ${isScrolled
+      <div className={`w-full transition-all duration-500 rounded-none overflow-hidden ${isScrolled
           ? 'glass-strong border border-brand-primary/10 shadow-lg scale-[0.98] md:scale-100'
           : 'bg-transparent border border-transparent'
         }`}>

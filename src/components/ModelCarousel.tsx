@@ -121,7 +121,7 @@ export default function ModelCarousel() {
       <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white via-white/40 to-transparent z-20 pointer-events-none" />
       <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white via-white/40 to-transparent z-20 pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-16 lg:mb-24 flex flex-col items-center gap-8">
+      <div className="w-full px-6 lg:px-12 mb-16 lg:mb-24 flex flex-col items-center gap-8">
         <div className="flex flex-wrap justify-center items-center gap-6 bg-white/80 backdrop-blur-md px-8 py-3 rounded-full border border-slate-200 shadow-[0_4px_20px_-5px_rgba(0,0,0,0.1)]">
           <div className="flex items-center gap-3">
             <span className="text-[10px] font-black text-slate-700 uppercase tracking-[0.2em]">Top-rated on</span>

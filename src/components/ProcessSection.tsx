@@ -67,7 +67,7 @@ export default function ProcessSection() {
       ref={containerRef}
       className="section-padding relative overflow-hidden bg-brand-primary/[0.02]"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
+      <div className="w-full px-6 lg:px-12 relative">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
